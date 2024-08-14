@@ -1,5 +1,5 @@
 const cors = require("cors");
-const port = 3388;
+const port = process.env.PORT || 3388;
 const express = require("express");
 
 //const basicAuth = require('express-basic-auth')
