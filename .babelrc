@@ -1,0 +1,17 @@
+{
+	"plugins": [
+		"@babel/plugin-syntax-export-default-from"
+		// "@babel/plugin-syntax-class-properties",
+		// "@babel/proposal-class-properties"
+	],
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": "current"
+				}
+			}
+		]
+	]
+}

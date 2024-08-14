@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: Innobox API
+  description: Innobox API to integration node red services
+  version: 1.0.0
+  x-logo:
+    url: /api/docs/assets/logo.png
+    backgroundColor: '#FFFFFF'
+    altText: Innova IT
+  contact:
+    name: Innova IT
+    url: https://innovait.com
+    email: innovait@innovait.cat
+servers:
+  - url: http://stg-innobox-api.innovait.cat
+    description: Sandbox environment server
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []
+paths:
+  /api/users:
+    get:
+      tags:
+        - default
+      summary: users
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/users/1:
+    get:
+      tags:
+        - default
+      summary: user by id
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
