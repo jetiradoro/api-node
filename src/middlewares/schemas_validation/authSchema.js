@@ -10,7 +10,7 @@ module.exports = [
     if (!["ERROR", "INFO", "RECOVERY"].includes(value)) {
       const token = config.token
       if (`Bearer ${token}` !== value) {
-        throw new Error(`El token es incorrecto! (${token})`)
+        throw new Error(`El token es incorrecto!`)
       }
       return true
     }
