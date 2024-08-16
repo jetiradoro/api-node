@@ -277,40 +277,80 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
+									"key": "Date",
+									"value": "Fri, 16 Aug 2024 13:11:46 GMT"
 								},
 								{
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8"
 								},
 								{
-									"key": "Content-Length",
-									"value": "5920"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"1720-WqdlbnZ8Ar7GP/QObauJbwT7MvM\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 16 Aug 2024 12:26:58 GMT"
+									"key": "Transfer-Encoding",
+									"value": "chunked"
 								},
 								{
 									"key": "Connection",
 									"value": "keep-alive"
 								},
 								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"145c-2GNHKb+hLt9D7XaSBlHTK7OGr3Q\""
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "BYPASS"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "cdg1::cdg1::2qlhx-1723813905756-b9bed4d32d96"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=dY5yPaU%2FWSTxTSsuLWsJIzcV3p%2Fal%2BD%2BO1J%2FD1XlkzZIy7d47ZpM43h4scwRCOJe9G230wpTxXDsLNHgHhYbYTi31L57joSC708qs4oioYLSsSYsabP5KQb5NauCjzsVhlUzEx%2FMSw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b41ac0e98b5cbb7-MAD"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"status\": \"success\",\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Goku\",\n            \"ki\": \"60.000.000\",\n            \"maxKi\": \"90 Septillion\",\n            \"race\": \"Saiyan\",\n            \"gender\": \"Male\",\n            \"description\": \"El protagonista de la serie, conocido por su gran poder y personalidad amigable. Originalmente enviado a la Tierra como un infante volador con la misión de conquistarla. Sin embargo, el caer por un barranco le proporcionó un brutal golpe que si bien casi lo mata, este alteró su memoria y anuló todos los instintos violentos de su especie, lo que lo hizo crecer con un corazón puro y bondadoso, pero conservando todos los poderes de su raza. No obstante, en la nueva continuidad de Dragon Ball se establece que él fue enviado por sus padres a la Tierra con el objetivo de sobrevivir a toda costa a la destrucción de su planeta por parte de Freeza. Más tarde, Kakarot, ahora conocido como Son Goku, se convertiría en el príncipe consorte del monte Fry-pan y líder de los Guerreros Z, así como el mayor defensor de la Tierra y del Universo 7, logrando mantenerlos a salvo de la destrucción en innumerables ocasiones, a pesar de no considerarse a sí mismo como un héroe o salvador.\",\n            \"image\": \"https://dragonball-api.com/characters/goku_normal.webp\",\n            \"affiliation\": \"Z Fighter\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Vegeta\",\n            \"ki\": \"54.000.000\",\n            \"maxKi\": \"19.84 Septillion\",\n            \"race\": \"Saiyan\",\n            \"gender\": \"Male\",\n            \"description\": \"Príncipe de los Saiyans, inicialmente un villano, pero luego se une a los Z Fighters. A pesar de que a inicios de Dragon Ball Z, Vegeta cumple un papel antagónico, poco después decide rebelarse ante el Imperio de Freeza, volviéndose un aliado clave para los Guerreros Z. Con el paso del tiempo llegaría a cambiar su manera de ser, optando por permanecer y vivir en la Tierra para luchar a su lado contra las inminentes adversidades que superar. Junto con Piccolo, él es de los antiguos enemigos de Goku que ha evolucionando al pasar de ser un villano y antihéroe, a finalmente un héroe a lo largo del transcurso de la historia, convirtiéndose así en el deuteragonista de la serie.\",\n            \"image\": \"https://dragonball-api.com/characters/vegeta_normal.webp\",\n            \"affiliation\": \"Z Fighter\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Piccolo\",\n            \"ki\": \"2.000.000\",\n            \"maxKi\": \"500.000.000\",\n            \"race\": \"Namekian\",\n            \"gender\": \"Male\",\n            \"description\": \"Es un namekiano que surgió tras ser creado en los últimos momentos de vida de su padre, siendo su actual reencarnación. Aunque en un principio fue el archienemigo de Son Goku, con el paso del tiempo fue haciéndose menos malvado hasta finalmente convertirse en un ser bondadoso y miembro de los Guerreros Z. A través del tiempo, también comenzó a tomarle cariño a su discípulo Son Gohan, a quien veía como una especie de \\\"vástago\\\" y formando un lazo de amistad con este.\",\n            \"image\": \"https://dragonball-api.com/characters/picolo_normal.webp\",\n            \"affiliation\": \"Z Fighter\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Bulma\",\n            \"ki\": \"0\",\n            \"maxKi\": \"0\",\n            \"race\": \"Human\",\n            \"gender\": \"Female\",\n            \"description\": \"Bulma es la protagonista femenina de la serie manga Dragon Ball y sus adaptaciones al anime Dragon Ball, Dragon Ball Z, Dragon Ball Super y Dragon Ball GT. Es hija del Dr. Brief y su esposa Panchy, hermana menor de Tights y una gran amiga de Son Goku con quien inicia la búsqueda de las Esferas del Dragón. En Dragon Ball Z tuvo a Trunks, primogénito de quien sería su esposo Vegeta, a su hija Bra[3] y su hijo adulto del tiempo alterno Trunks del Futuro Alternativo.\",\n            \"image\": \"https://dragonball-api.com/characters/bulma.webp\",\n            \"affiliation\": \"Z Fighter\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Freezer\",\n            \"ki\": \"530.000\",\n            \"maxKi\": \"52.71 Septillion\",\n            \"race\": \"Frieza Race\",\n            \"gender\": \"Male\",\n            \"description\": \"Freezer es el tirano espacial y el principal antagonista de la saga de Freezer.\",\n            \"image\": \"https://dragonball-api.com/characters/Freezer.webp\",\n            \"affiliation\": \"Army of Frieza\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Zarbon\",\n            \"ki\": \"20.000\",\n            \"maxKi\": \"30.000\",\n            \"race\": \"Frieza Race\",\n            \"gender\": \"Male\",\n            \"description\": \"Zarbon es uno de los secuaces de Freezer y un luchador poderoso.\",\n            \"image\": \"https://dragonball-api.com/characters/zarbon.webp\",\n            \"affiliation\": \"Army of Frieza\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Dodoria\",\n            \"ki\": \"18.000\",\n            \"maxKi\": \"20.000\",\n            \"race\": \"Frieza Race\",\n            \"gender\": \"Male\",\n            \"description\": \"Dodoria es otro secuaz de Freezer conocido por su brutalidad.\",\n            \"image\": \"https://dragonball-api.com/characters/dodoria.webp\",\n            \"affiliation\": \"Army of Frieza\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Ginyu\",\n            \"ki\": \"9.000\",\n            \"maxKi\": \"25.000\",\n            \"race\": \"Frieza Race\",\n            \"gender\": \"Male\",\n            \"description\": \"Ginyu es el líder del la élite de mercenarios de mayor prestigio del Ejército de Freeza, la cual lleva el nombre de Fuerzas Especiales Ginew en su honor[9].\",\n            \"image\": \"https://dragonball-api.com/characters/ginyu.webp\",\n            \"affiliation\": \"Army of Frieza\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Celula\",\n            \"ki\": \"250.000.000\",\n            \"maxKi\": \"5 Billion\",\n            \"race\": \"Android\",\n            \"gender\": \"Male\",\n            \"description\": \"Cell conocido como Célula en España, es un bioandroide creado por la computadora del Dr. Gero, quien vino del futuro de la línea 3 con la intención de vengarse de Goku por haber acabado con el Ejército del Listón Rojo, y con ello el sueño de todo villano: dominar el mundo. Es el antagonista principal del Arco de los Androides y Cell.\",\n            \"image\": \"https://dragonball-api.com/characters/celula.webp\",\n            \"affiliation\": \"Freelancer\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Gohan\",\n            \"ki\": \"45.000.000\",\n            \"maxKi\": \"40 septillion\",\n            \"race\": \"Saiyan\",\n            \"gender\": \"Male\",\n            \"description\": \"Son Gohanda en su tiempo en España, o simplemente Gohan en Hispanoamérica, es uno de los personajes principales de los arcos argumentales de Dragon Ball Z, Dragon Ball Super y Dragon Ball GT. Es un mestizo entre saiyano y humano terrícola. Es el primer hijo de Son Goku y Chi-Chi, hermano mayor de Son Goten, esposo de Videl y padre de Pan.\",\n            \"image\": \"https://dragonball-api.com/characters/gohan.webp\",\n            \"affiliation\": \"Z Fighter\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Goku\",\n            \"imagen\": \"https://dragonball-api.com/characters/goku_normal.webp\",\n            \"tipo\": \"Saiyan\",\n            \"poder_ki\": \"90 Septillion\",\n            \"descripcion\": \"El protagonista de la serie, conocido por su gran poder y personalidad amigable. Originalmente enviado a la Tierra como un infante volador con la misión de conquistarla. Sin embargo, el caer por un barranco le proporcionó un brutal golpe que si bien casi lo mata, este alteró su memoria y anuló todos los instintos violentos de su especie, lo que lo hizo crecer con un corazón puro y bondadoso, pero conservando todos los poderes de su raza. No obstante, en la nueva continuidad de Dragon Ball se establece que él fue enviado por sus padres a la Tierra con el objetivo de sobrevivir a toda costa a la destrucción de su planeta por parte de Freeza. Más tarde, Kakarot, ahora conocido como Son Goku, se convertiría en el príncipe consorte del monte Fry-pan y líder de los Guerreros Z, así como el mayor defensor de la Tierra y del Universo 7, logrando mantenerlos a salvo de la destrucción en innumerables ocasiones, a pesar de no considerarse a sí mismo como un héroe o salvador.\"\n        },\n        {\n            \"id\": 2,\n            \"nombre\": \"Vegeta\",\n            \"imagen\": \"https://dragonball-api.com/characters/vegeta_normal.webp\",\n            \"tipo\": \"Saiyan\",\n            \"poder_ki\": \"19.84 Septillion\",\n            \"descripcion\": \"Príncipe de los Saiyans, inicialmente un villano, pero luego se une a los Z Fighters. A pesar de que a inicios de Dragon Ball Z, Vegeta cumple un papel antagónico, poco después decide rebelarse ante el Imperio de Freeza, volviéndose un aliado clave para los Guerreros Z. Con el paso del tiempo llegaría a cambiar su manera de ser, optando por permanecer y vivir en la Tierra para luchar a su lado contra las inminentes adversidades que superar. Junto con Piccolo, él es de los antiguos enemigos de Goku que ha evolucionando al pasar de ser un villano y antihéroe, a finalmente un héroe a lo largo del transcurso de la historia, convirtiéndose así en el deuteragonista de la serie.\"\n        },\n        {\n            \"id\": 3,\n            \"nombre\": \"Piccolo\",\n            \"imagen\": \"https://dragonball-api.com/characters/picolo_normal.webp\",\n            \"tipo\": \"Namekian\",\n            \"poder_ki\": \"500.000.000\",\n            \"descripcion\": \"Es un namekiano que surgió tras ser creado en los últimos momentos de vida de su padre, siendo su actual reencarnación. Aunque en un principio fue el archienemigo de Son Goku, con el paso del tiempo fue haciéndose menos malvado hasta finalmente convertirse en un ser bondadoso y miembro de los Guerreros Z. A través del tiempo, también comenzó a tomarle cariño a su discípulo Son Gohan, a quien veía como una especie de \\\"vástago\\\" y formando un lazo de amistad con este.\"\n        },\n        {\n            \"id\": 4,\n            \"nombre\": \"Bulma\",\n            \"imagen\": \"https://dragonball-api.com/characters/bulma.webp\",\n            \"tipo\": \"Human\",\n            \"poder_ki\": \"0\",\n            \"descripcion\": \"Bulma es la protagonista femenina de la serie manga Dragon Ball y sus adaptaciones al anime Dragon Ball, Dragon Ball Z, Dragon Ball Super y Dragon Ball GT. Es hija del Dr. Brief y su esposa Panchy, hermana menor de Tights y una gran amiga de Son Goku con quien inicia la búsqueda de las Esferas del Dragón. En Dragon Ball Z tuvo a Trunks, primogénito de quien sería su esposo Vegeta, a su hija Bra[3] y su hijo adulto del tiempo alterno Trunks del Futuro Alternativo.\"\n        },\n        {\n            \"id\": 5,\n            \"nombre\": \"Freezer\",\n            \"imagen\": \"https://dragonball-api.com/characters/Freezer.webp\",\n            \"tipo\": \"Frieza Race\",\n            \"poder_ki\": \"52.71 Septillion\",\n            \"descripcion\": \"Freezer es el tirano espacial y el principal antagonista de la saga de Freezer.\"\n        },\n        {\n            \"id\": 6,\n            \"nombre\": \"Zarbon\",\n            \"imagen\": \"https://dragonball-api.com/characters/zarbon.webp\",\n            \"tipo\": \"Frieza Race\",\n            \"poder_ki\": \"30.000\",\n            \"descripcion\": \"Zarbon es uno de los secuaces de Freezer y un luchador poderoso.\"\n        },\n        {\n            \"id\": 7,\n            \"nombre\": \"Dodoria\",\n            \"imagen\": \"https://dragonball-api.com/characters/dodoria.webp\",\n            \"tipo\": \"Frieza Race\",\n            \"poder_ki\": \"20.000\",\n            \"descripcion\": \"Dodoria es otro secuaz de Freezer conocido por su brutalidad.\"\n        },\n        {\n            \"id\": 8,\n            \"nombre\": \"Ginyu\",\n            \"imagen\": \"https://dragonball-api.com/characters/ginyu.webp\",\n            \"tipo\": \"Frieza Race\",\n            \"poder_ki\": \"25.000\",\n            \"descripcion\": \"Ginyu es el líder del la élite de mercenarios de mayor prestigio del Ejército de Freeza, la cual lleva el nombre de Fuerzas Especiales Ginew en su honor[9].\"\n        },\n        {\n            \"id\": 9,\n            \"nombre\": \"Celula\",\n            \"imagen\": \"https://dragonball-api.com/characters/celula.webp\",\n            \"tipo\": \"Android\",\n            \"poder_ki\": \"5 Billion\",\n            \"descripcion\": \"Cell conocido como Célula en España, es un bioandroide creado por la computadora del Dr. Gero, quien vino del futuro de la línea 3 con la intención de vengarse de Goku por haber acabado con el Ejército del Listón Rojo, y con ello el sueño de todo villano: dominar el mundo. Es el antagonista principal del Arco de los Androides y Cell.\"\n        },\n        {\n            \"id\": 10,\n            \"nombre\": \"Gohan\",\n            \"imagen\": \"https://dragonball-api.com/characters/gohan.webp\",\n            \"tipo\": \"Saiyan\",\n            \"poder_ki\": \"40 septillion\",\n            \"descripcion\": \"Son Gohanda en su tiempo en España, o simplemente Gohan en Hispanoamérica, es uno de los personajes principales de los arcos argumentales de Dragon Ball Z, Dragon Ball Super y Dragon Ball GT. Es un mestizo entre saiyano y humano terrícola. Es el primer hijo de Son Goku y Chi-Chi, hermano mayor de Son Goten, esposo de Videl y padre de Pan.\"\n        }\n    ]\n}"
 						}
 					]
 				}

@@ -173,38 +173,79 @@ paths:
         '200':
           description: OK
           headers:
-            X-Powered-By:
+            Date:
               schema:
                 type: string
-                example: Express
-            Access-Control-Allow-Origin:
-              schema:
-                type: string
-                example: '*'
+                example: Fri, 16 Aug 2024 13:11:46 GMT
             Content-Type:
               schema:
                 type: string
                 example: application/json; charset=utf-8
-            Content-Length:
-              schema:
-                type: integer
-                example: '5920'
-            ETag:
+            Transfer-Encoding:
               schema:
                 type: string
-                example: W/"1720-WqdlbnZ8Ar7GP/QObauJbwT7MvM"
-            Date:
-              schema:
-                type: string
-                example: Fri, 16 Aug 2024 12:26:58 GMT
+                example: chunked
             Connection:
               schema:
                 type: string
                 example: keep-alive
-            Keep-Alive:
+            access-control-allow-origin:
               schema:
                 type: string
-                example: timeout=5
+                example: '*'
+            Cache-Control:
+              schema:
+                type: string
+                example: public, max-age=0, must-revalidate
+            etag:
+              schema:
+                type: string
+                example: W/"145c-2GNHKb+hLt9D7XaSBlHTK7OGr3Q"
+            strict-transport-security:
+              schema:
+                type: string
+                example: max-age=63072000
+            x-powered-by:
+              schema:
+                type: string
+                example: Express
+            x-vercel-cache:
+              schema:
+                type: string
+                example: BYPASS
+            x-vercel-id:
+              schema:
+                type: string
+                example: cdg1::cdg1::2qlhx-1723813905756-b9bed4d32d96
+            CF-Cache-Status:
+              schema:
+                type: string
+                example: DYNAMIC
+            Report-To:
+              schema:
+                type: string
+                example: >-
+                  {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=dY5yPaU%2FWSTxTSsuLWsJIzcV3p%2Fal%2BD%2BO1J%2FD1XlkzZIy7d47ZpM43h4scwRCOJe9G230wpTxXDsLNHgHhYbYTi31L57joSC708qs4oioYLSsSYsabP5KQb5NauCjzsVhlUzEx%2FMSw%3D%3D"}],"group":"cf-nel","max_age":604800}
+            NEL:
+              schema:
+                type: string
+                example: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server:
+              schema:
+                type: string
+                example: cloudflare
+            CF-RAY:
+              schema:
+                type: string
+                example: 8b41ac0e98b5cbb7-MAD
+            Content-Encoding:
+              schema:
+                type: string
+                example: br
+            alt-svc:
+              schema:
+                type: string
+                example: h3=":443"; ma=86400
           content:
             application/json:
               schema:
@@ -214,12 +255,11 @@ paths:
                 message: ''
                 data:
                   - id: 1
-                    name: Goku
-                    ki: 60.000.000
-                    maxKi: 90 Septillion
-                    race: Saiyan
-                    gender: Male
-                    description: >-
+                    nombre: Goku
+                    imagen: https://dragonball-api.com/characters/goku_normal.webp
+                    tipo: Saiyan
+                    poder_ki: 90 Septillion
+                    descripcion: >-
                       El protagonista de la serie, conocido por su gran poder y
                       personalidad amigable. Originalmente enviado a la Tierra
                       como un infante volador con la misión de conquistarla. Sin
@@ -238,16 +278,12 @@ paths:
                       mantenerlos a salvo de la destrucción en innumerables
                       ocasiones, a pesar de no considerarse a sí mismo como un
                       héroe o salvador.
-                    image: https://dragonball-api.com/characters/goku_normal.webp
-                    affiliation: Z Fighter
-                    deletedAt: null
                   - id: 2
-                    name: Vegeta
-                    ki: 54.000.000
-                    maxKi: 19.84 Septillion
-                    race: Saiyan
-                    gender: Male
-                    description: >-
+                    nombre: Vegeta
+                    imagen: https://dragonball-api.com/characters/vegeta_normal.webp
+                    tipo: Saiyan
+                    poder_ki: 19.84 Septillion
+                    descripcion: >-
                       Príncipe de los Saiyans, inicialmente un villano, pero
                       luego se une a los Z Fighters. A pesar de que a inicios de
                       Dragon Ball Z, Vegeta cumple un papel antagónico, poco
@@ -261,16 +297,12 @@ paths:
                       antihéroe, a finalmente un héroe a lo largo del transcurso
                       de la historia, convirtiéndose así en el deuteragonista de
                       la serie.
-                    image: https://dragonball-api.com/characters/vegeta_normal.webp
-                    affiliation: Z Fighter
-                    deletedAt: null
                   - id: 3
-                    name: Piccolo
-                    ki: 2.000.000
-                    maxKi: 500.000.000
-                    race: Namekian
-                    gender: Male
-                    description: >-
+                    nombre: Piccolo
+                    imagen: https://dragonball-api.com/characters/picolo_normal.webp
+                    tipo: Namekian
+                    poder_ki: 500.000.000
+                    descripcion: >-
                       Es un namekiano que surgió tras ser creado en los últimos
                       momentos de vida de su padre, siendo su actual
                       reencarnación. Aunque en un principio fue el archienemigo
@@ -280,16 +312,12 @@ paths:
                       comenzó a tomarle cariño a su discípulo Son Gohan, a quien
                       veía como una especie de "vástago" y formando un lazo de
                       amistad con este.
-                    image: https://dragonball-api.com/characters/picolo_normal.webp
-                    affiliation: Z Fighter
-                    deletedAt: null
                   - id: 4
-                    name: Bulma
-                    ki: '0'
-                    maxKi: '0'
-                    race: Human
-                    gender: Female
-                    description: >-
+                    nombre: Bulma
+                    imagen: https://dragonball-api.com/characters/bulma.webp
+                    tipo: Human
+                    poder_ki: '0'
+                    descripcion: >-
                       Bulma es la protagonista femenina de la serie manga Dragon
                       Ball y sus adaptaciones al anime Dragon Ball, Dragon Ball
                       Z, Dragon Ball Super y Dragon Ball GT. Es hija del Dr.
@@ -299,81 +327,57 @@ paths:
                       primogénito de quien sería su esposo Vegeta, a su hija
                       Bra[3] y su hijo adulto del tiempo alterno Trunks del
                       Futuro Alternativo.
-                    image: https://dragonball-api.com/characters/bulma.webp
-                    affiliation: Z Fighter
-                    deletedAt: null
                   - id: 5
-                    name: Freezer
-                    ki: '530.000'
-                    maxKi: 52.71 Septillion
-                    race: Frieza Race
-                    gender: Male
-                    description: >-
+                    nombre: Freezer
+                    imagen: https://dragonball-api.com/characters/Freezer.webp
+                    tipo: Frieza Race
+                    poder_ki: 52.71 Septillion
+                    descripcion: >-
                       Freezer es el tirano espacial y el principal antagonista
                       de la saga de Freezer.
-                    image: https://dragonball-api.com/characters/Freezer.webp
-                    affiliation: Army of Frieza
-                    deletedAt: null
                   - id: 6
-                    name: Zarbon
-                    ki: '20.000'
-                    maxKi: '30.000'
-                    race: Frieza Race
-                    gender: Male
-                    description: >-
+                    nombre: Zarbon
+                    imagen: https://dragonball-api.com/characters/zarbon.webp
+                    tipo: Frieza Race
+                    poder_ki: '30.000'
+                    descripcion: >-
                       Zarbon es uno de los secuaces de Freezer y un luchador
                       poderoso.
-                    image: https://dragonball-api.com/characters/zarbon.webp
-                    affiliation: Army of Frieza
-                    deletedAt: null
                   - id: 7
-                    name: Dodoria
-                    ki: '18.000'
-                    maxKi: '20.000'
-                    race: Frieza Race
-                    gender: Male
-                    description: >-
+                    nombre: Dodoria
+                    imagen: https://dragonball-api.com/characters/dodoria.webp
+                    tipo: Frieza Race
+                    poder_ki: '20.000'
+                    descripcion: >-
                       Dodoria es otro secuaz de Freezer conocido por su
                       brutalidad.
-                    image: https://dragonball-api.com/characters/dodoria.webp
-                    affiliation: Army of Frieza
-                    deletedAt: null
                   - id: 8
-                    name: Ginyu
-                    ki: '9.000'
-                    maxKi: '25.000'
-                    race: Frieza Race
-                    gender: Male
-                    description: >-
+                    nombre: Ginyu
+                    imagen: https://dragonball-api.com/characters/ginyu.webp
+                    tipo: Frieza Race
+                    poder_ki: '25.000'
+                    descripcion: >-
                       Ginyu es el líder del la élite de mercenarios de mayor
                       prestigio del Ejército de Freeza, la cual lleva el nombre
                       de Fuerzas Especiales Ginew en su honor[9].
-                    image: https://dragonball-api.com/characters/ginyu.webp
-                    affiliation: Army of Frieza
-                    deletedAt: null
                   - id: 9
-                    name: Celula
-                    ki: 250.000.000
-                    maxKi: 5 Billion
-                    race: Android
-                    gender: Male
-                    description: >-
+                    nombre: Celula
+                    imagen: https://dragonball-api.com/characters/celula.webp
+                    tipo: Android
+                    poder_ki: 5 Billion
+                    descripcion: >-
                       Cell conocido como Célula en España, es un bioandroide
                       creado por la computadora del Dr. Gero, quien vino del
                       futuro de la línea 3 con la intención de vengarse de Goku
                       por haber acabado con el Ejército del Listón Rojo, y con
                       ello el sueño de todo villano: dominar el mundo. Es el
                       antagonista principal del Arco de los Androides y Cell.
-                    image: https://dragonball-api.com/characters/celula.webp
-                    affiliation: Freelancer
-                    deletedAt: null
                   - id: 10
-                    name: Gohan
-                    ki: 45.000.000
-                    maxKi: 40 septillion
-                    race: Saiyan
-                    gender: Male
-                    description: >-
+                    nombre: Gohan
+                    imagen: https://dragonball-api.com/characters/gohan.webp
+                    tipo: Saiyan
+                    poder_ki: 40 septillion
+                    descripcion: >-
                       Son Gohanda en su tiempo en España, o simplemente Gohan en
                       Hispanoamérica, es uno de los personajes principales de
                       los arcos argumentales de Dragon Ball Z, Dragon Ball Super
@@ -381,9 +385,6 @@ paths:
                       terrícola. Es el primer hijo de Son Goku y Chi-Chi,
                       hermano mayor de Son Goten, esposo de Videl y padre de
                       Pan.
-                    image: https://dragonball-api.com/characters/gohan.webp
-                    affiliation: Z Fighter
-                    deletedAt: null
         '401':
           description: Unauthorized
           headers:
