@@ -1,19 +1,19 @@
-// const {body, checkSchema, validationResult} = require('express-validator')
-const config = require('../../config')
-const authSchema = {
-	Authorization: {
-		notEmpty: {
-			errorMessage: 'No se ha encontrado el token de autorización',
-		},
-		custom: {
-			options: (value) => {
-				const token = config.token
-				if (`Bearer ${token}` !== value) return false
+const config = require("../../config")
+const { header } = require("express-validator")
 
-				return true
-			},
-			errorMessage: 'El token es incorrecto!',
-		},
-	},
-}
-module.exports = authSchema
+module.exports = [
+  header(
+    "Authorization",
+    "No se ha encontrado el token de autorización"
+  ).notEmpty(),
+  header("Authorization").custom((value) => {
+    if (!["ERROR", "INFO", "RECOVERY"].includes(value)) {
+      const token = config.token
+      if (`Bearer ${token}` !== value) {
+        throw new Error(`El token es incorrecto! (${token})`)
+      }
+      return true
+    }
+    return true
+  }),
+]

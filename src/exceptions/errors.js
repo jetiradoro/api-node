@@ -1,5 +1,5 @@
 const errors = {
-	ApiError: require('./ApiError'),
+  ApiError: require("./ApiError"),
 }
 
 module.exports = errors

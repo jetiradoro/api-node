@@ -1,7 +1,7 @@
 const ExampleService = {
   testProcess: () => {
-    return { api: "api.smartfulcode.com" };
+    return { api: "api.smartfulcode.com" }
   },
-};
+}
 
-module.exports = ExampleService;
+module.exports = ExampleService
