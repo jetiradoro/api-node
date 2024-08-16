@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
-    "apigen": "node ./src/api/openApi.js",
+    "apigen": "node ./src/components/api-docs/services/OpenApiGenService.js",
     "test": "jest",
     "testw": "jest --watch ",
     "testwa": "jest --watchAll  ",

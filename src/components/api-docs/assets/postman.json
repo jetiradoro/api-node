@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "a28d5fe0-1198-43eb-bb98-6b3de75a193e",
+		"name": "API NODE",
+		"description": "API desarrollada en NodeJs y Express para poder utilizarla de plantilla en proyectos que requieran de una API.\n\nTodas las peticiones a la API estan securizadas con un Bearer Token con fines demostrativos de seguridad.\n\nTodas las respuestas se envían en formato json y contienen la misma estructura:\n\n``` json\n{\n   \"status\":<string>,\n   \"message\": <string>,\n   \"data\": <object> | <array <object>>\n}\n\n ```",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "229093"
+	},
+	"item": [
+		{
+			"name": "Tests",
+			"item": [
+				{
+					"name": "Example",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_NODE_HOST}}/example",
+							"host": [
+								"{{API_NODE_HOST}}"
+							],
+							"path": [
+								"example"
+							]
+						},
+						"description": "Endpoint de ejemplo para validar que la API responde correctamente"
+					},
+					"response": [
+						{
+							"name": "401 Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3388/example",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3388",
+									"path": [
+										"example"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 16 Aug 2024 10:49:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "public, max-age=0, must-revalidate"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"68-bIZFIkwv7zDibJy4UonpZ9r+VIY\""
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=63072000"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "x-vercel-cache",
+									"value": "BYPASS"
+								},
+								{
+									"key": "x-vercel-id",
+									"value": "cdg1::cdg1::z9vpd-1723805376369-4c2a295464b6"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=WHD1hd6qtkhItyCoM%2FKiv6pycxu7BfwSBQZoL8gsnfup1LFk3MeIZHxcZCMfZuipjKPnscPjeGUtlvfIbjWR4YMoyjMKsas4Y8OyQjVuP5X0Z8C%2FhZfee8Jxtci%2BPRfpFAZ4UHPEXQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "8b40dbd1eca0cc70-MAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"message\": \"Unauthorized token request\",\n    \"errors\": [\n        \"El token es incorrecto! (secreto)\"\n    ]\n}"
+						},
+						{
+							"name": "200 Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_NODE_HOST}}/example",
+									"host": [
+										"{{API_NODE_HOST}}"
+									],
+									"path": [
+										"example"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"47-ivQPCTVWqjOBQz1xCMS/9+wBHbQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 Aug 2024 10:53:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"\",\n    \"data\": {\n        \"api\": \"api.smartfulcode.com\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "secret",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
