@@ -23,7 +23,7 @@ Desde el terminal se pueden ejecutar diferentes scripts
 # Documentación de la API
 
 La Api la podemos dejar autodocumentada, para ello lo único que hay que hacer es exportar la colección del postman, y el archivo json
-generado lo guardamos en la ruta `/src/api/postman.json` seguidamente lanzamos el comando de generación de docuementación:
+generado lo guardamos en la ruta `/src/components/api-docs/assets/postman.json` seguidamente lanzamos el comando de generación de docuementación:
 
 ```bash
 npm run apigen
@@ -33,3 +33,34 @@ y ya podemos acceder a la documentación a través de dos urls, segun si la quer
 
 - http://mi_dominio/api/docs/swagger
 - http://mi_dominio/api/docs/redoc
+
+# Ejemplos de uso
+
+> **No borrar el componente api-docs. Ya que sin el no se podrá generar la documentación de la api. Borrarlo solo en caso de no querer documentar**
+
+Se han creado un par de ejemplos de uso para que podáis partir de la estructura de ficheros que he creado.
+
+Las dos rutas utilizan autorizaicón por **Bearer token**, con fines demostrativos la contraseña del token es **secret**. En el despliegue de vuestra aplicación API solo debéis crear la variable de entorno **API_BEARER_TOKEN** con el valor que queráis para securizar las peticiones a vuestra api, utilizando los middlewares que he puesto en los ejemplos.
+
+1. Example
+2. Dragon Ball Api
+
+## Example
+
+Ubicado en components example. Podéis encontrar un endpoint en la base de la ruta `https://api.smartfulcode.com/example` el tipo de respuesta de ejemplo de uso para la api.
+Esta petición requiere de Bearer Token informado
+
+## Dragon Ball Api
+
+Este endpoint está usando la API pública de Dragon Ball, pero se ha hecho pasar por aquí solo con fines demostrativos de como podemos usar esta información para devolver el resultado deseado a nuestros endpoints.
+
+Se ha puesto a disposición la ruta `https://api.smartfulcode.com/dragon-ball/characters` para obtener un listado de los personajes de la serie.
+
+# Documentación de los ejemplos
+
+Para poder ver un ejemplo de la documentación generada sobre los ejemplos creados, se han puesto a disposición dos servicios del standar **OpenApi**
+
+- Swagger: [https://api.smartfulcode.com/docs/swagger](https://api.smartfulcode.com/docs/swagger)
+- Redoc: [https://api.smartfulcode.com/docs/redoc](https://api.smartfulcode.com/docs/redoc)
+
+Son dos formas de poder docuementar por interfaz gráfica de forma sencilla y usando el estandar de openApi y estructura de archivos swagger.

@@ -4,8 +4,7 @@ const DBApiService = require('../services/DBApiService')
 const DBController = {
     getCharacters: async (req, res) => {
         try{
-            const request = await DBApiService.getCharacters()
-            const result = request.data.items
+            const result = await DBApiService.getCharacters()
             responses.successResponse(res, result)
         }catch(err){
             responses.failResponse(res, err)

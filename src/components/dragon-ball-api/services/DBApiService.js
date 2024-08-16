@@ -6,7 +6,19 @@ const api  = axios.create({
 
 const DBApiService = {
     getCharacters: async () => {
-        return await api.get('/characters')
+        const response = await api.get('/characters')
+        const result = response.data.items.map(character => {
+            return{
+                id: character.id,
+                nombre: character.name,
+                imagen: character.image,
+                tipo: character.race,
+                poder_ki: character.maxKi,
+                descripcion: character.description
+            }
+        })
+
+        return result
     }
 }
 module.exports = DBApiService
