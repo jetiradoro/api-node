@@ -1,8 +1,9 @@
 const router = require('express').Router()
 const redoc = require('redoc-express')
+const path = require('path')
 
 router.get('/spec/:file', (req, res) => {
-	res.sendFile(`src/components/api-docs/assets/${req.params.file}`, {root: '.'})
+	res.sendFile(path.resolve(__dirname,`../assets/${req.params.file}`))
 })
 
 router.get(
